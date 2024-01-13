@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table style="width:60%">
+    <tr>
+      <th>#</th>
+      <th>Nomi</th>
+      <th>Status</th>
+      <th>View</th>
+    </tr>
+    {%for todo in todos%}
+        <tr>
+        <td>{{todo.id}}</td>
+        <td>{{todo.title}}</td>
+        <td>{{todo.status}}</td>
+        <td><a href="/detail/{{todo.id}}/">view</a></td>
+        </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}

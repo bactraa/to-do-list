@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method = 'post'>
+    <h1 style="color: red;">{{func.title}}</h1>
+    <h4>{{func.deadline}}</h4>
+    <p>{{func.notes}}</p>
+    <h1>{{func.title}}</h1>
+    <h1>{{func.status}}</h1>
+    <h1>{{func.created_at}}</h1>
+</form>
+{% endblock %}
